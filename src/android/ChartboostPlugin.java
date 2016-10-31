@@ -30,7 +30,6 @@ import org.apache.cordova.CordovaWebView;
 
 public class ChartboostPlugin extends CordovaPlugin
 {
-	//private AdColonyVideoAd ad = null;
 
 		@Override
 		public void initialize(CordovaInterface cordova, CordovaWebView webView) {
