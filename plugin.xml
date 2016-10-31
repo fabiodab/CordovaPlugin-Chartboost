@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.dabgaming.ChartboostPlugin"
+        version="0.9">
+
+
+    <name>Cordova ChartboostPlugin </name>
+    <description>Cordova ChartboostPlugin </description>
+    <author>Dabgaming</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0" />
+    </engines>
+
+    <js-module src="www/chartboost.js" name="chartboost">
+        <clobbers target="chartboost" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ChartboostPlugin">
+                <param name="android-package" value="com.dabgaming.ChartboostPlugin" />
+            </feature>
+        </config-file>
+
+
+      <framework src="com.google.android.gms:play-services-plus:+" />
+      <framework src="com.google.android.gms:play-services-identity:+" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+
+          <activity android:name="com.chartboost.sdk.CBImpressionActivity"
+                         android:excludeFromRecents="true"
+                         android:hardwareAccelerated="true"
+                         android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+                         android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        </config-file>
+
+        <source-file src="src/android/chartboost.jar" target-dir="libs/" />
+        <source-file src="src/android/ChartboostPlugin.java" target-dir="src/com/dabgaming/ChartboostPlugin" />
+    </platform>
+
+
+</plugin>
