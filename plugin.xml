@@ -18,6 +18,18 @@
         <clobbers target="chartboost" />
     </js-module>
 
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ChartboostPlugin">
+                <param name="ios-package" value="Chartboost"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/Chartboost.h" />
+        <source-file src="src/ios/Chartboost.m" />
+    </platform>
+    <!-- end of iOS -->
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
