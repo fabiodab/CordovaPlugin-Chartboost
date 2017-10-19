@@ -15,7 +15,8 @@
   },
   "keywords": [
     "ChartboostPlugin",
-    "Chartboost"
+    "Chartboost",
+    "CordovaChartboostIOS"
   ],
   "engines": [
     {

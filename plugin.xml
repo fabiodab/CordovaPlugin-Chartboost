@@ -21,7 +21,7 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="ChartboostPlugin">
+            <feature name="CordovaChartboostIOS">
                 <param name="ios-package" value="CordovaChartboostIOS"/>
             </feature>
         </config-file>
