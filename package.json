@@ -1,6 +1,6 @@
 {
   "name": "com.dabgaming.ChartboostPlugin",
-  "version": "0.9",
+  "version": "0.9.1",
   "description": "Adds native support for ChartBoost ad framework",
   "cordova": {
     "id": "com.dabgaming.ChartboostPlugin",
