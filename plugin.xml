@@ -22,11 +22,16 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="ChartboostPlugin">
-                <param name="ios-package" value="Chartboost"/>
+                <param name="ios-package" value="CordovaChartboostIOS"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/Chartboost.h" />
-        <source-file src="src/ios/Chartboost.m" />
+        <header-file src="src/ios/CordovaChartboostIOS.h" />
+        <source-file src="src/ios/CordovaChartboostIOS.m" />
+        <framework src="src/ios/Chartboost.framework" custom="true"/>
+        <framework src="StoreKit.framework"/>
+        <framework src="Foundation.framework"/>
+        <framework src="CoreGraphics.framework" />
+        <framework src="UIKit.framework" />
     </platform>
     <!-- end of iOS -->
 
