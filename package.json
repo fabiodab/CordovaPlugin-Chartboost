@@ -1,0 +1,28 @@
+{
+  "name": "com.dabgaming.ChartboostPlugin",
+  "version": "0.9",
+  "description": "Adds native support for ChartBoost ad framework",
+  "cordova": {
+    "id": "com.dabgaming.ChartboostPlugin",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiodab/CordovaPlugin-Chartboost.git"
+  },
+  "keywords": [
+    "ChartboostPlugin",
+    "Chartboost"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Dab Gaming",
+  "license": "Dab Gaming"
+}
