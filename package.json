@@ -1,5 +1,5 @@
 {
-  "name": "com.dabgaming.ChartboostPlugin",
+  "name": "IOSChartboost",
   "version": "0.9.1",
   "description": "Adds native support for ChartBoost ad framework",
   "cordova": {
@@ -16,7 +16,7 @@
   "keywords": [
     "ChartboostPlugin",
     "Chartboost",
-    "CordovaChartboostIOS"
+    "IOSChartboost"
   ],
   "engines": [
     {
