@@ -1,4 +1,4 @@
-/********* CordovaChartboostIOS.h Cordova Plugin Header *******/
+/********* IOSChartboost.h Cordova Plugin Header *******/
 /* Written by: Fabio Acri
 Date : 17 Oct 2017
 on behalf of : Dab Gaming Limited */
@@ -7,13 +7,13 @@ on behalf of : Dab Gaming Limited */
 #import <Cordova/CDVPlugin.h>
 #import <Chartboost/Chartboost.h>
 
-@interface CordovaChartboostIOS : CDVPlugin <ChartboostDelegate>
+@interface IOSChartboost : CDVPlugin <ChartboostDelegate>
 
 @property NSString *callbackId;
 @property BOOL showRewardedVideo;
 @property BOOL completeRewardedVideo;
 
-+ (CordovaChartboostIOS *) chartboostPlugin;
++ (IOSChartboost *) chartboostPlugin;
 - (void) setCustomId:(CDVInvokedUrlCommand*) command;
 - (void) downloadRewardedVideo:(CDVInvokedUrlCommand*) command;
 - (void) showRewardedVideo:(CDVInvokedUrlCommand*) command;

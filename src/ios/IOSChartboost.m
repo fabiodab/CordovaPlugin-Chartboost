@@ -1,4 +1,4 @@
-/********* CordovaChartboostIOS.m Cordova Plugin Implementation *******/
+/********* IOSChartboost.m Cordova Plugin Implementation *******/
 /* Written by: Fabio Acri
 Date : 17 Oct 2017
 on behalf of : Dab Gaming Limited */
@@ -6,22 +6,22 @@ on behalf of : Dab Gaming Limited */
 
 
 #import <Cordova/CDVPlugin.h>
-#import "CordovaChartboostIOS.h"
+#import "IOSChartboost.h"
 
-@implementation CordovaChartboostIOS
+@implementation IOSChartboost
 
 @synthesize callbackId;
 @synthesize showRewardedVideo;
 @synthesize completeRewardedVideo;
 
-static CordovaChartboostIOS *chartboostPlugin;
+static IOSChartboost *chartboostPlugin;
 
-+ (CordovaChartboostIOS *) chartboostPlugin {
++ (IOSChartboost *) chartboostPlugin {
     return chartboostPlugin;
 }
 
 - (void) pluginInitialize {
-    NSLog(@"Starting Chartboost plugin");
+    NSLog(@"Starting IOSChartboost plugin");
     chartboostPlugin = self;
 }
 

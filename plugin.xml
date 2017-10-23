@@ -6,8 +6,8 @@
         version="0.9.1">
 
 
-    <name>Cordova ChartboostPlugin </name>
-    <description>Cordova ChartboostPlugin </description>
+    <name>IOSChartboost</name>
+    <description>IOS Chartboost support</description>
     <author>Dabgaming</author>
 
     <engines>
@@ -21,12 +21,12 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="CordovaChartboostIOS">
-                <param name="ios-package" value="CordovaChartboostIOS"/>
+            <feature name="IOSChartboost">
+                <param name="ios-package" value="IOSChartboost"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/CordovaChartboostIOS.h" />
-        <source-file src="src/ios/CordovaChartboostIOS.m" />
+        <header-file src="src/ios/IOSChartboost.h" />
+        <source-file src="src/ios/IOSChartboost.m" />
         <framework src="src/ios/Chartboost.framework" custom="true"/>
         <framework src="StoreKit.framework"/>
         <framework src="Foundation.framework"/>
