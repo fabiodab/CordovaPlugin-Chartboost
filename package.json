@@ -1,5 +1,5 @@
 {
-  "name": "IOSChartboost",
+  "name": "ChartboostPlugin",
   "version": "0.9.1",
   "description": "Adds native support for ChartBoost ad framework",
   "cordova": {
@@ -15,8 +15,7 @@
   },
   "keywords": [
     "ChartboostPlugin",
-    "Chartboost",
-    "IOSChartboost"
+    "Chartboost"
   ],
   "engines": [
     {

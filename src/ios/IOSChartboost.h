@@ -17,6 +17,8 @@ on behalf of : Dab Gaming Limited */
 - (void) setCustomId:(CDVInvokedUrlCommand*) command;
 - (void) downloadRewardedVideo:(CDVInvokedUrlCommand*) command;
 - (void) showRewardedVideo:(CDVInvokedUrlCommand*) command;
+- (void) showInterstitial:(CDVInvokedUrlCommand*) command;
+- (void) cacheInterstitial:(CDVInvokedUrlCommand*) command;
 
 //Delegates
 - (void)didCacheRewardedVideo:(CBLocation)location;

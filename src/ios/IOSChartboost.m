@@ -22,6 +22,12 @@ static IOSChartboost *chartboostPlugin;
 
 - (void) pluginInitialize {
     NSLog(@"Starting IOSChartboost plugin");
+    
+    NSDictionary *mainDictionary = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Fan Betz-Info" ofType:@"plist"]];
+    [Chartboost startWithAppId:@"5910480404b0162c14f14753" appSignature:@"1251d9d2f83782ea39bd099c6f6706e9f3dd13dc" delegate:self];
+    
+    NSLog(@"IOSChartboost initialized!!!");
+    
     chartboostPlugin = self;
 }
 
@@ -63,6 +69,15 @@ static IOSChartboost *chartboostPlugin;
                                                           messageAsString:@"didFailToLoadRewardedVideo"];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:self.callbackId];
     };
+}
+
+- (void) showInterstitial:(CDVInvokedUrlCommand*) command {
+    self.callbackId = command.callbackId;
+    [Chartboost showInterstitial:[command.arguments objectAtIndex:0]];
+}
+- (void) cacheInterstitial:(CDVInvokedUrlCommand*) command {
+    self.callbackId = command.callbackId;
+    [Chartboost cacheInterstitial:[command.arguments objectAtIndex:0]];
 }
 
 - (BOOL)shouldDisplayRewardedVideo:(CBLocation)location{
